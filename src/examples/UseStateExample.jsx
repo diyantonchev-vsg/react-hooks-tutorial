@@ -12,11 +12,11 @@ const UseStateExample = () => {
     alert(text);
   };
 
-  const increaseCount = () => {
+  const incrementCount = () => {
     setCount((prevCount) => prevCount + 1);
   };
 
-  const decreaseCount = () => { 
+  const decrementCount = () => { 
     setCount((prevCount) => prevCount - 1); 
   };
 
@@ -34,9 +34,9 @@ const UseStateExample = () => {
       </div>
 
       <div>
-        <button onClick={decreaseCount}>-</button>
+        <button onClick={decrementCount}>-</button>
         <span className='ml-8 mr-8'>{count}</span>
-        <button onClick={increaseCount}>+</button>
+        <button onClick={incrementCount}>+</button>
       </div>
     </>
   );

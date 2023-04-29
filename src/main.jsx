@@ -12,7 +12,12 @@ import ClassComponent from './examples/ClassComponent';
 import ComponentWithHooks from './examples/ComponentWithHooks'
 import UseStateExample from './examples/UseStateExample';
 import UseEffectExample from './examples/UseEffectExample';
-import UseRefExample from './examples/UseRefExample.jsx';
+import UseRefExample from './examples/UseRefExample';
+import UseMemoExample from './examples/UseMemoExample';
+import { UseCallbackExample } from './examples/UseCallbackExample';
+import CustomHooksExample from './examples/CustomHooksExample';
+
+import marketItemsData from './mocks/market-items-data';
 
 import './index.css';
 
@@ -23,28 +28,40 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />,
+        element: <Home />
       },
       {
         path: 'old',
-        element: <ClassComponent />,
+        element: <ClassComponent />
       },
       {
         path: 'new',
-        element: <ComponentWithHooks />,
+        element: <ComponentWithHooks />
       },
       {
         path: 'useState',
-        element: <UseStateExample />,
+        element: <UseStateExample />
       },
       {
         path: 'useEffect',
-        element: <UseEffectExample />,
+        element: <UseEffectExample />
       },
       {
         path: 'useRef',
-        element: <UseRefExample />,
+        element: <UseRefExample />
       },
+      {
+        path: 'useMemo',
+        element: <UseMemoExample data={marketItemsData} />
+      },
+      {
+        path: 'useCallback',
+        element: <UseCallbackExample />
+      },
+      {
+        path: 'custom',
+        element: <CustomHooksExample />
+      }
     ],
   }
 ]);

@@ -48,8 +48,8 @@ const Header = () => (
           </NavLink>
         </li>
         <li>
-          <NavLink to='/useContext'>
-            useContext
+          <NavLink to='/custom'>
+            Custom Hooks
           </NavLink>
         </li>
       </ul>
